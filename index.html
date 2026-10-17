@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Calorías y Guía Nutricional</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- 1. header -->
+    <header id="inicio">
+        <div class="header-contenido">
+            <h1>Contador de Calorías y Guía Nutricional</h1>
+            <p>Aprende a llevar un control saludable de tu alimentación diaria y conoce los conceptos básicos de
+                nutrición.</p>
+            <!-- Barra de navegación -->
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#calculadora">Calculadora de Calorías</a></li>
+                    <li><a href="#guias">Guías de Nutrición</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- 2. main -->
+    <main>
+        <!-- SECCIÓN 1: CALCULADORA O REGISTRO DE CALORÍAS -->
+        <section id="calculadora">
+            <h2>Calculadora y Registro de Comidas</h2>
+            <p>Utiliza este formulario para anotar los alimentos que vas consumiendo durante el día y llevar la cuenta
+                de tus calorías.</p>
+
+            <!-- Formulario básico de registro -->
+            <form id="form-alimento">
+                <div class="campo">
+                    <label for="nombre-alimento">Nombre del alimento:</label>
+                    <input type="text" id="nombre-alimento" placeholder="Ej. Manzana, Huevo cocido..." required>
+                </div>
+
+                <div class="campo">
+                    <label for="calorias-alimento">Calorías (kcal):</label>
+                    <input type="number" id="calorias-alimento" placeholder="Ej. 150" min="1" required>
+                </div>
+
+                <button type="submit" id="btn-registrar">Registrar Alimento</button>
+            </form>
+
+            <!-- Resumen de calorías acumuladas -->
+            <div class="resumen-calorias">
+                <p><strong>Total de calorías acumuladas hoy:</strong> <span id="total-calorias">650</span> kcal</p>
+            </div>
+
+            <!-- Contenedor de las comidas registradas -->
+            <h3>Comidas Registradas del Día</h3>
+            <div id="lista-comidas">
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: GUÍAS DE NUTRICIÓN -->
+        <section id="guias">
+            <h2>Guías Básicas de Nutrición y Salud</h2>
+            <p>Conocer qué comemos es el primer paso para mejorar nuestra salud y mantener un estilo de vida con
+                energía.</p>
+
+            <!-- Artículo informativo 1 -->
+            <article class="articulo-guia">
+                <h3>¿Qué son las calorías y por qué importan?</h3>
+                <p>
+                    Las calorías son la unidad de medida que utilizamos para cuantificar la energía que los alimentos
+                    aportan a nuestro cuerpo. Nuestro organismo necesita esta energía todos los días para realizar
+                    funciones vitales como respirar, hacer la digestión y permitirnos caminar o hacer ejercicio.
+                </p>
+                <p>
+                    Si consumimos la misma cantidad de calorías que gastamos, nuestro peso se mantiene estable. Si
+                    consumimos más calorías de las que gastamos de forma constante, el cuerpo almacena ese exceso en
+                    forma de reserva energética.
+                </p>
+            </article>
+
+            <!-- Uso obligatorio de <figure> con <img> y <figcaption> -->
+            <figure class="figura-nutricion">
+                <img src="img/img1.jpg" alt="Plato saludable con variedad de verduras, frutas y alimentos nutritivos">
+                <figcaption>
+                    Figura 1: Un plato equilibrado debe incluir una buena variedad de frutas, verduras y fuentes de
+                    energía limpia.
+                </figcaption>
+            </figure>
+
+            <!-- Artículo informativo 2 -->
+            <article class="articulo-guia">
+                <h3>Los tres macronutrientes esenciales</h3>
+                <p>Todos los alimentos que consumimos están compuestos principalmente por tres grandes grupos de
+                    nutrientes:</p>
+                <ul>
+                    <li><strong>Proteínas:</strong> Ayudan a reparar tejidos y a construir músculo (se encuentran en
+                        huevos, pollo, legumbres y lácteos).</li>
+                    <li><strong>Carbohidratos:</strong> Son la principal fuente de energía rápida para nuestro cerebro y
+                        músculos (presentes en arroz, avena, frutas y papas).</li>
+                    <li><strong>Grasas saludables:</strong> Protegen nuestros órganos y ayudan a absorber vitaminas
+                        importantes (como el aguacate, aceite de oliva y frutos secos).</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- INFORMACIÓN COMPLEMENTARIA (<aside>) -->
+        <aside>
+            <h3>Consejos Rápidos de Salud e Hidratación</h3>
+
+            <div class="consejo-item">
+                <h4>💧 La importancia del agua</h4>
+                <p>Se recomienda tomar entre 6 y 8 vasos de agua al día (aproximadamente 2 litros). Estar bien hidratado
+                    mejora la digestión y la concentración durante las horas de estudio.</p>
+            </div>
+
+            <div class="consejo-item">
+                <h4>🥗 Come más fibra</h4>
+                <p>Incluir ensaladas y frutas con cáscara ayuda a sentirte satisfecho por más tiempo y mantiene tu
+                    sistema digestivo en buen estado.</p>
+            </div>
+
+            <div class="consejo-item">
+                <h4>🚶 Muévete a diario</h4>
+                <p>Caminar al menos 30 minutos al día es una forma sencilla de activar tu metabolismo sin necesidad de
+                    rutinas complicadas.</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 3. footer -->
+    <footer id="contacto">
+        <p><strong>Contador de Calorías y Guía Nutricional</strong> - Actividad Escolar de HTML5 Semántico</p>
+        <p>Elaborado por: <strong>Ronny Mejía Zuleta</strong></p>
+        <p>Año de desarrollo: <time datetime="2026">2026</time></p>
+        <p>Contacto: <a href="mailto:ronnymejia.z@academia.umb.edu.co">ronnymejia.z@academia.umb.edu.co</a></p>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
